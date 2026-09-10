@@ -1,0 +1,58 @@
+.container{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-templates-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    "main main.sidebar"
+    "footer footer footer footer";
+    /*grid-template-columns: 1fr 1fr 1fr;
+    grid-templates-rows: 1fr 1fr;
+    grid-template-columns: minmax(20px, 1fr) 2fr 1fr;
+    grid-template-columns: minmax(20px, 1fr) repeat(2, 2fr);
+    /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
+}
+/*Caso #1*/
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+/*Caso #2*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+/*.item1{
+    background-color: rgb(173, 230, 187);
+}
+.item2{
+    background-color: rgb(16, 138, 232);
+}
+.item3{
+    background-color: rgb(200, 16, 232);
+}
+.item4{
+    background-color: rgb(230, 208, 16);
+}
+.item5{
+    background-color: rgb(232, 16, 92);
+}*/
+.header{
+    grid-area: header;
+    background-color: rgb(173, 230, 187);
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(16, 138, 232);
+}
+.main {
+    grid-area: main;
+    background-color: rgb(230, 208, 16);
+}
+.footer {
+    grid-area: footer;
+    background-color: rgb(232, 16, 92);
+}
